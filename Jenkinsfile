@@ -14,7 +14,7 @@ node('DevServer') {
     sh 'ng build --prod=true'
   }
 
-  // def dockerImage
+  // def dockerImage 
   // stage('build docker') {
   //   dockerImage = docker.build('logicyel/logimwui', '.')
   // }
