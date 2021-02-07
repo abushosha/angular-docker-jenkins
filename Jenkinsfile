@@ -5,23 +5,17 @@ pipeline {
     
   stages {
         
-    stage('Cloning Git') {
-      steps {
-        git 'https://github.com/abushosha/angular-docker-jenkins.git'
-      }
-    }
+    // stage('Cloning Git') {
+    //   steps {
+    //     git 'https://github.com/abushosha/angular-docker-jenkins.git'
+    //   }
+    // }
         
     stage('Install dependencies') {
       steps {
         sh 'npm install'
       }
-    }
-     
-    stage('Test') {
-      steps {
-         sh 'npm test'
-      }
-    }      
+    }   
   }
 }
 // node('DevServer') {
